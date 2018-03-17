@@ -1,0 +1,21 @@
+
+/* Add a dark gray background color to the modal header and center text */
+ /* .modal-header, .close {
+	background-color: #0b1e5e;
+	color: #fff !important;
+	text-align: center;
+	font-size: 20px;
+} */
+  .modal-body,.modal-header, .close{
+	padding: 5px 30px;
+	 /* background-color:black; */
+	color: #fff !important;
+	text-align: center;
+	font-size: 20px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+	background-color: #202020;
+	opacity: 0.8;
+}

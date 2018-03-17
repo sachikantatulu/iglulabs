@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+      xmlns:context="http://www.springframework.org/schema/context"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="
+        http://www.springframework.org/schema/beans    
+        http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context-4.0.xsd">   
+    <!-- Base package for checking the annoted classes -->
+      <context:component-scan base-package="com.iglulabs"></context:component-scan>
+    <!--   
+      <bean id="mailService" class="com.softechnocon.service.MailService">
+         	<property name="mailSender" ref="mailSender"></property>
+         </bean> -->
+
+<bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
+			<property name="host" value="smtp.gmail.com" />
+			<property name="port" value="587" />
+			<property name="username" value="softechnocontesting@gmail.com" />
+			<property name="password" value="softechnocon" />
+	
+			<property name="javaMailProperties">
+				<props>
+					<prop key="mail.smtp.auth">true</prop>
+					<prop key="mail.smtp.starttls.enable">true</prop>
+				</props>
+			</property>
+		</bean>
+
+
+
+      <!-- Configure JDBC Connection-->
+      <bean id="dataSource"
+            class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+            <property name="driverClassName" value="com.mysql.jdbc.Driver" />
+         
+        <property value="jdbc:mysql://localhost:3306/tasktool_db" name="url"/>
+            <property value="root" name="username"/>
+            <property value="" name="password"/>
+            <!-- <property name="password" value="$r1krishn@" /> -->
+      </bean>
+
+      <!-- Configure Hibernate 4 Session Facotry -->
+      <bean id="sessionFactory"
+            class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+
+			<property name="dataSource">
+			  <ref bean="dataSource" />
+			</property>
+
+			<property name="hibernateProperties">
+			  <props>
+					<prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
+					<prop key="hibernate.show_sql">true</prop>
+					<prop key="hibernate.hbm2ddl.auto">update</prop><prop key="hibernate.connection.SetBigStringTryClob">true</prop>
+					
+			  </props>
+			</property>
+			<property name="annotatedClasses">
+			<list>
+				  <value>com.iglulabs.model.Login</value>
+				   <value>com.iglulabs.model.Person</value>
+				   <value>com.iglulabs.model.PasswordResetToken</value>
+				   <value>com.iglulabs.model.Task</value>
+				   <!-- Entity classes-->
+			</list>
+			</property>
+			</bean>
+			
+			<bean id="persistenceExceptionTranslationPostProcessor"
+		class="org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor" />
+
+	<bean id="dataDao" class="com.iglulabs.dao.DataDaoImpl"></bean>
+	<bean id="dataServices" class="com.iglulabs.service.DataServicesImpl"></bean>
+</beans>

@@ -1,0 +1,36 @@
+    body {
+      background: #fff;
+      font-family: 'Open Sans', sans-serif;
+    }
+    .navbar-default {
+       background-color: #30b898;
+       border-color: #30b898;
+    }
+    .table-content{
+      margin-top:30px;
+    }
+    .navbar-default .navbar-brand {
+      color: #fff;
+      background-color: transparent;
+    }
+@media screen and (min-width:768px){
+    .navbar-brand-centered {
+        position: absolute;
+        left: 50%;
+        display: block;
+        width: 160px;
+        text-align: center;
+        color:#fff;
+    }
+    .navbar>.container .navbar-brand-centered, 
+    .navbar>.container-fluid .navbar-brand-centered {
+        margin-left: -80px;
+    }
+
+    th{
+
+      background-color: #173944;
+      color:white;
+    }
+
+ }

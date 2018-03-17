@@ -1,0 +1,70 @@
+.chart {
+  width: 100%;
+  min-height: 800px;
+}
+.logo_head{
+		position:relative;
+		
+		top:5px;
+}
+.mapview{
+		height:400px;
+}
+.main-body{
+	min-height:518px;
+	width:100%;
+	left:0px;
+}
+.footer{
+				position: relative;
+				min-height:65px;
+				width:100%;
+				left:-15px;
+				background: linear-gradient(to right, #000066 6%, #ffffff 101%);
+				
+			}
+			.logo{
+				position:absolute;
+				right:220px;
+				top:3px;
+			}
+			.company-name{
+				position:absolute;
+				top:4px;
+				right:15px;
+			}
+.blank{
+		min-height:50px;
+}
+.navbar {
+      font-family: Montserrat, sans-serif;
+      margin-bottom: 0;
+      background-color: #2d2d30;
+      border: 0;
+      font-size: 11px !important;
+      letter-spacing: 4px;
+      opacity: 0.9;
+  }
+  .navbar li a, .navbar .navbar-brand { 
+      color: #d5d5d5 !important;
+  }
+  .navbar-nav li a:hover {
+      color: #fff !important;
+  }
+  .navbar-nav li.active a {
+      color: #fff !important;
+      background-color: #29292c !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+  }
+  .open .dropdown-toggle {
+      color: #fff;
+      background-color: #555 !important;
+  }
+  .dropdown-menu li a {
+      color: #666600 !important;
+  }
+  .dropdown-menu li a:hover {
+      background-color: #4d4dff !important;
+  }

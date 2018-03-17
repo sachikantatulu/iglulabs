@@ -1,0 +1,93 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("images/inventory.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: sans-serif;
+}
+
+.panel{
+    border: 0px;
+    height: 480px;
+    background: rgba(0,0,0,0.5);
+    color:#ffff;
+    text-align: center;
+    padding-top: 50px;
+    position: relative;
+    transition: 1s; 
+}
+
+h5{
+   
+    font-family: "Rockwell";
+    color:#F9DF05;
+    padding: 15px;
+}
+
+h4{
+    margin: 0;
+    padding: 0;
+    font-family: "Rockwell";
+    color:#F9DF05;
+
+}
+
+span{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background: #ffff;
+    display: inline-block;
+    text-align: center;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+.lock{
+    position: absolute;
+    margin: 30px;
+    top: -50px;
+    right: 120px;
+    width:50px;
+    height:50px;
+    line-height: 50px;
+    text-align: center;
+    background: linear-gradient(DarkSlateGray,Cyan);
+    background: -webkit-linear-gradient(DarkSlateGray,Cyan);
+    background: -moz-linear-gradient(DarkSlateGray,Cyan);
+    border: 3px outset #F4E10A;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius:100%;
+    -o-border-radius: 100%;
+    border-radius: 100%;
+    color:#fff;
+    -webkit-box-shadow: -10px 10px 20px rgba(255,255,255,0.5);
+    box-shadow: -10px 10px 20px rgba(255,255,255,0.5);
+}
+
+.panel:hover{
+    background: rgba(0,0,0,0.7);
+}
+
+.btn-success{
+    border: opx;
+    border-radius: 0px;
+}
+
+.g-recaptcha
+{   
+    transform:scale(0.77);
+    -webkit-transform:scale(1.0);
+    transform-origin:4 4;
+    -webkit-transform-origin:4 4;
+}
+
+img{
+width: 290px;
+margin: -20px -30px -40px -40px;
+padding: -70px;
+height: -20px;
+}

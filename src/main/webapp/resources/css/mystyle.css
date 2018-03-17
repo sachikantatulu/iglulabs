@@ -1,0 +1,109 @@
+			body{
+					background: linear-gradient(to bottom, #009999 0%, #6699ff 86%);
+					font-family: sans-serif, Arial;
+					color:white;
+					font-weight: 300;
+					
+				}
+			
+			.container{
+					position: relative;
+					width: 740px;
+					height: 500px;
+					top: 50px;
+					left: 325px;
+					
+				}
+			.textbox{
+				position: absolute;
+				height: 180px;
+				width: 480px;
+				top: 150px;
+				right: 0px;
+				
+			}
+			.arrow-image{
+				position: absolute;
+				height:	110px;
+				width: 110px;
+				top: 0px;
+				right: 20px;
+				background-color: #003300;
+				-webkit-border-radius: 5px;
+				
+			}
+			.arrow-image:hover{
+				background-color: #006600;
+				height:	115px;
+				width: 115px;
+			}
+			.eml-pass{
+				height:	40px;
+				width: 320px;
+				background-color:white;
+				font-family: sans-serif, Arial;
+				font-size:18px;;
+				text-align: center;
+				font-weight:300;
+				-webkit-border-radius: 10px;
+				margin-bottom: 15px;
+				border: 1px solid red;
+				
+			}
+			.eml-pass:hover{
+				background-color:#ffff4d;
+				-webkit-border-radius: 10px;
+			}
+			.eml-pass:focus{
+				background-color:#ffffe6;
+				-webkit-border-radius: 10px;
+			}
+			.main-image{
+				position: absolute;
+				height: 200px;
+				width: 200px;
+				top: 100px;
+				left: 20px;
+				background-color:#ff8566;
+				-webkit-border-radius: 100px;
+				border: 2px solid white;
+			
+			}
+			.main-image:hover{
+				background-color: #ff704d;
+			}
+			.forgot-pass{
+				position:absolute;
+				top:138px;
+				right:15px;
+				text-decoration: none;
+			}
+			.text-sss{
+				position:absolute;
+				font-family:"Arial Black", Gadget, sans-serif;
+				text-align: center;
+				top:320px;
+				left:60px;
+				font-weight:800;
+				font-size: 140%;
+			}
+			.footer{
+				position: relative;
+				top:60px;
+				left:-50px;
+				height:70px;
+				width:1408px;
+				background: linear-gradient(to right, #ff8566 0%, #ffffff 100%);
+				
+			}
+			.logo{
+				position:absolute;
+				top:5px;
+				right:240px;
+				
+			}
+			.company-name{
+				position:absolute;
+				top:13px;
+				right:50px;
+			}
